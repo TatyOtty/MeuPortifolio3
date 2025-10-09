@@ -1,0 +1,284 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 15px 30px;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.356);
+}
+
+header img {
+  height: 80px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+header nav ul li a {
+  font-family: 'montserrat' serif;
+  font-style: normal;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+header nav ul li a.active {
+  color: #b85c00;
+}
+
+.container-conteudo {
+  background-color: #da8a3a;
+  display: flex; /* Faz com que os itens internos se alinhem em uma linha */
+  align-items: flex-start; /* Alinha os itens pelo topo */
+  gap: 30px; /* Adiciona um espaço de 30px entre a imagem e o texto */
+}
+
+.container-conteudo img {
+  max-width: 300px; /* Limita a largura da imagem */
+  height: auto; /* Mantém a proporção original */
+}
+
+/* Estilo para os parágrafos, garantindo que fiquem um abaixo do outro */
+.texto-ao-lado p {
+  margin-bottom: 20px; /* Adiciona espaço entre os parágrafos */
+}
+
+.link-conteudo {
+  color: #333;
+}
+
+.badge {
+  display: flex;
+  gap: 6px;
+  height: 30px;
+  width: 1px;
+}
+
+main h2 {
+  font-family: 'dancing script', cursive;
+  font-size: 40px;
+}
+
+main p {
+  font-family: 'montserrat' serif;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 30px;
+  background-color: #f8f8f8;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /*Outra opção space-between*/
+  min-height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-family: 'montserrat' serif;
+  font-size: 21px;
+  text-align: center;
+  font-weight: bold;
+  color: #da8a3a;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card p, ul li {
+  font-family: 'montserrat' serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Media query para telas menores: cards empilham verticalmente */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Em telas pequenas, cada card ocupa a largura total */
+    max-width: 400px; /* Limita a largura para não ficar muito grande em tablets */
+  }
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ccc; /* Linha sutil na parte superior */
+    color: #b85c00;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Estilo para o botão de voltar ao topo */
+#botao-topo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #b85c00;
+    color: #fff;
+    border-radius: 50%; /* Transforma o botão em um círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* Garante que o botão fique na frente de outros elementos */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#botao-topo .fas {
+    font-size: 20px;
+}
+
+#botao-topo:hover {
+    background-color: #fff;
+    color: #b85c00;
+}
+
+main h3 {
+  font-family: 'montserrat' serif;
+  color: #b85c00;
+  font-size: 21px;
+}
+
+main div img {
+  height: 200px;
+}
+
+main img{
+  border: 1px solid #eeeee0;
+  width: 250px;
+  height: 200px;
+}
+
+.container-imagem {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 30px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.imagem {
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.322);
+  padding: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 300px;
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+.imagem:hover {
+  transform: translateY(-5px);
+}
+
+span {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'monteserrat' serif;
+  font-style: normal;
+  color: #b85c00;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 30px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.icon-box-icon {
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.322);
+  padding: 30px;
+  width: 200px;
+  min-height: 250px; /* Aumentar para deixar mais quadrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+.icon-box-icon svg {
+  width: 80px;
+  height: auto;
+}
+
+.btn-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.button {
+  background-color: #b85c00; 
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #994d00;
+}
